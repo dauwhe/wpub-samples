@@ -5,11 +5,6 @@
 // find manifest
 var manifestLink = document.querySelectorAll('link[rel=publication]')[0].href
 
-
-
-// it MUST inform the user that the current resource is part of a Web Publication
-
-
 // create main element
 var mainFrame = document.createElement('main');
 
@@ -28,7 +23,6 @@ manifest.then(json => {
   mainFrame.appendChild(iframe);
   };
 window.location.hash = json[0];
-alert('this resource is part of a web publication');
 });
 
 
@@ -47,7 +41,6 @@ alert('this resource is part of a web publication');
   var current = json.map((el) => el).indexOf(currentTarget);
 if (current < length) {
 window.location.hash = json[current + 1];
-alert('this resource is part of a web publication');
 };
 })};
 
@@ -60,7 +53,6 @@ var current = json.map((el) => el).indexOf(currentTarget);
 // don't try to go before the first item in the reading order
 if (current > 0) {
 window.location.hash = json[current - 1];
-alert('this resource is part of a web publication');
 };
 
 
