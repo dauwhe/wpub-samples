@@ -1,0 +1,10 @@
+{
+  "address": "www.example.com/minimal/",
+  "reading-order": [
+    "index.html"
+  ],
+  "reading-progression": "ltr",
+  "resources": [
+    "index.html", "manifest.json"
+  ]
+}

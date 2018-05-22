@@ -1,0 +1,7 @@
+{
+  "address": "www.example.com/linear/",
+  "spine": [
+ "a.html", "b.html", "c.html", "d.html", "e.html"
+  ],
+  "reading-progression": "ltr"
+}
